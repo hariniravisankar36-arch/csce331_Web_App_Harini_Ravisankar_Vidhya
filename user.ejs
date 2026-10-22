@@ -4,7 +4,7 @@
 </head>
 <body>
    <h1>TAs</h1>
-   <% for (var i in teammembers) {%>
-       <p>Name: <%=teammembers[i].student_name%>, UIN: <%=teammembers[i].uin%>, Role: <%=teammembers[i].role%></p>
-   <% } %>
+   <% teammembers.forEach(function(member) { %>
+       <p>Name: <%= member.student_name %>, UIN: <%= member.uin %>, Role: <%= member.role %></p>
+   <% }); %>
 </body>
